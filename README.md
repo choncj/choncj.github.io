@@ -32,7 +32,7 @@ Seasoned in:
 
 
 <p align="center">
-	The Project is currently still in development.
+	The Project is currently still in development. Visit at <a href="https://choncj.github.io">choncj.github.io</a>
 </p>
 
 
