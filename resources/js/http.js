@@ -21,7 +21,7 @@ const main_content_templates = {
 	'contact' : './pages/contact.html',
 	'work/futurehaze': './pages/projects/futurehaze/futurehaze.html',
 	'work/sushienzo': './pages/projects/sushienzo/sushienzo.html',
-	'work/elcee': './pages/home-copy.html',
+	// 'work/elcee': './pages/home-copy.html',
 	'404': './pages/404.html'
 };
  
