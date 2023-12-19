@@ -39,7 +39,9 @@ const imgCarousel = () => {
 	
 	// select next slide button	// select next slide button
 	const $prevSlide = document.querySelector(".btn-prev"),
-	$nextSlide = document.querySelector(".btn-next");
+	$nextSlide = document.querySelector(".btn-next"),
+	$img = document.querySelectorAll('.slider .slide img'),
+	$imageView = document.querySelector('#image-view');
 	
 	// current slide counter
 	// maximum number of slides
@@ -64,6 +66,15 @@ const imgCarousel = () => {
 			slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
 		});
 	});
+
+	// add event listener for IMG resize
+	$img.forEach(img => {
+		img.addEventListener('click', function() {
+			$imageView.style.backgroundImage = 'url(' + img.src + ')';
+			$imageView.style.display = 'block';
+		});
+	});
+
 };
 
 const docTitle = (string) => {

@@ -203,10 +203,25 @@ main .page-content {
 	height: auto;
 	max-height: 15rem; 
 } */
+/*? Slider View */
+#image-view {
+	display: none;
+	position: absolute;
+	z-index: 9999;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-size: contain;
+	background-repeat: no-repeat no-repeat;
+	background-position: center center;
+	background-color: rgba(0, 0, 0, 0.3);
+ }
+
 
 /* ? Slider */
 .gallery {
-	min-height: 350px;
+	min-height: 500px;
 	display: grid;
 	place-items: center;
 }
@@ -214,7 +229,7 @@ main .page-content {
 .slider {
 	width: 100%;
 	max-width: 800px;
-	min-height: 350px;
+	min-height: 400px;
 	position: relative;
 	overflow: hidden;
 }
@@ -351,7 +366,27 @@ button:hover {
 }
 
 /*? Media Query */
+@media only screen and (max-width: 629px) {
+	.gallery {
+		min-height: 300px;
+	}
+	
+	.slider {
+		max-width: 800px;
+		min-height: 200px;
+	}
+
+	footer {
+		display: flex;
+		flex-direction: row;
+		border-top: 0rem solid white;
+	}
+}
+
+
 @media only screen and (min-width: 630px) {
+
+
 	footer {
 		display: flex;
 		flex-direction: row;
