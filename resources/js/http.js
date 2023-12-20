@@ -20,6 +20,7 @@ const main_content_templates = {
 	'about' : './pages/about.html',
 	'contact' : './pages/contact.html',
 	'work/futurehaze': './pages/projects/futurehaze/futurehaze.html',
+	'work/souletiquette': './pages/projects/souletiquette/souletiquette.html',
 	'work/sushienzo': './pages/projects/sushienzo/sushienzo.html',
 	'work/elcee': './pages/projects/elcee/elcee.html',
 	'404': './pages/404.html'
