@@ -443,6 +443,22 @@ button:hover {
 	}
 }
 
+@media only screen and (min-width: 1328px) {
+	.gallery {
+		min-height: 516px;
+	}
+	
+	.slider {
+		max-width: 1200px;
+		min-height: 516px;
+	}
+	
+	.slide {
+		width: 100%;
+		max-width: 1200px;
+	}
+}
+
 @media only screen and (min-width: 1426px) {
 	header {
 		padding: 0 var(--medium-wide-padding);
@@ -468,6 +484,17 @@ button:hover {
 	footer {
 		padding: 1rem var(--large-wide-padding);
 	}
+}
+
+@media only screen and (min-width: 1800px) {
+	.gallery {
+		min-height: 675px;
+	}
+	
+	.slider {
+		min-height: 675px;
+	}
+
 }
 
 @media only screen and (min-width: 1981px) {
