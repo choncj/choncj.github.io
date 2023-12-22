@@ -23,7 +23,6 @@ const showBack = (selected) => {
 	if(selected.includes('home')|| selected.includes('404')){
 		$backBtn.style.opacity = 0;
 	} else {
-		console.log($backBtn.style.opacity, 'opacity');
 		$backBtn.style.opacity = 1; 
 	}
 };

@@ -12,7 +12,9 @@ let current_id_content = "home",
 request,
 $main_content,
 path;
-
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+		
 // Define available Pages
 const main_content_templates = {
 	'home' : './pages/home.html',
@@ -23,6 +25,7 @@ const main_content_templates = {
 	'work/souletiquette': './pages/projects/souletiquette/souletiquette.html',
 	'work/sushienzo': './pages/projects/sushienzo/sushienzo.html',
 	'work/elcee': './pages/projects/elcee/elcee.html',
+	'work/fhmag': './pages/projects/fhmag/fhmag.html',
 	'404': './pages/404.html'
 };
  
@@ -51,8 +54,7 @@ const _get = () => {
 	docTitle(title);
 	// Load BreadCrumbs with current Path
 	showBack(selected);
-	loadBreadCrumbs(nullContent ? path[0]:'home');
-	
+	loadBreadCrumbs(nullContent ? path[0]:'home');	
 };
 
 // HTTP request function
@@ -69,7 +71,8 @@ const getHTML = () => {
 };
 
 const httpComplete = (evt) => {
-	// console.log("The transfer is complete.");
+	gtag('js', new Date());
+	gtag('config', 'G-XLC8BR01XL');
 	if(path.includes('work')) {
 		imgCarousel();
 	}
